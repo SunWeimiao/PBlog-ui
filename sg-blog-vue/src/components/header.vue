@@ -14,6 +14,7 @@
 						</el-submenu>
 						<el-menu-item index="/Reward"><i class="fa fa-wa fa-cny"></i> 赞赏</el-menu-item>
 						<el-menu-item index="/Friendslink"><i class="fa fa-wa fa-users"></i>友链</el-menu-item>
+						<!-- <el-menu-item index="/AboutMe"><i class="fa fa-wa fa-vcard"></i> 关于本站</el-menu-item> -->
 
 						<div class="userInfo">
 							<div v-show="!haslogin" class="nologin">
@@ -57,6 +58,7 @@
 import {logout} from '../api/user'
 import {removeToken} from '../utils/auth'
 import {getCategoryList} from '../api/category'
+// import {getUserInfo,savaUserInfo} from '../api/user.js'//获取用户信息，保存用户信息
 import {
 	Typeit
 } from '../utils/plug.js'

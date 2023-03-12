@@ -117,7 +117,7 @@ import store from '../store'
                 const isLt2M = file.size / 1024 / 1024 < 1;
                 // console.log(file);
                 if (!isJPG) {
-                  this.$message.error('上传头像图片只能是 JPG/JPEG/PNG 格式!');
+                  this.$message.error('上传头像图片只能是 JPG/PNG 格式!');
                 }
                 if (!isLt2M) {
                   this.$message.error('上传头像图片大小不能超过 1MB!');
